@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.nav {
+    margin-bottom: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 20px;
+    margin: 0 20px;
+
+    border-bottom: 1px solid $grey-light;
+
+    @include tablet {
+        justify-content: space-between;
+    }
+}
+
+.link {
+    display: block;
+    font-weight: $bold;
+    color: $blue;
+}

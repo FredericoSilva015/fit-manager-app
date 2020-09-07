@@ -1,0 +1,95 @@
+@import './variables';
+@import './mixin';
+
+.dayTracker__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
+.dayTracker__button,
+.dayTracker__date {
+    flex: 1 1 100%;
+
+    padding: 20px;
+
+    font-weight: $bold;
+    text-align: center;
+}
+
+.dayTracker__button{ 
+    border: none;
+
+    color: $white;
+    background: $grey-light;
+
+    font-size: $h2;
+    font-weight: $bold;
+    line-height: lineHeight($h2);
+}
+
+.dayTracker__date {
+    font-size: $h2;
+    font-weight: $bold;
+    line-height: lineHeight($h2);
+}
+
+.tracker__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.form__wrapper {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 400px;
+
+        margin: 0 auto;
+    }
+    
+    @include tablet {
+        padding: 0 20px;
+
+        justify-content: space-between;
+    }
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 10px;
+}
+
+.save__button {
+    padding: 10px;
+
+    cursor:pointer;
+
+    border: none;
+    border-radius: 5px;
+
+    color: $white;
+    background: $blue;
+
+    transition: transform .2s ease;
+}
+
+.save__button:hover {
+     transform: scale(1.2);
+}

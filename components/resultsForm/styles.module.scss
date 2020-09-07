@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    margin-bottom: 20px;
+
+    font-size: $h3;
+    font-weight: $bold;
+    line-height: lineHeight($h3);
+}
+
+.form__input__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input__wrapper:nth-child(n) {
+    margin-bottom: 10px;
+}
+
+.form_label {
+    font-size: $p;
+    font-weight: $medium;
+    line-height: lineHeight($p);
+}
+
+.form__input {
+    margin-left: 10px;
+}

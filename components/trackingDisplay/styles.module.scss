@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.tracker__valueWrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.tracking__display{
+    flex: 1 1 100%;
+
+    padding: 10px;
+
+    @include mobile {
+        flex: 1 1 50%;
+    }
+}
+
+.tracking__display__default {
+    background: $cyan;
+}
+
+.tracking__display__red {
+    background: $red;
+}
+
+.tracking__display__green {
+    background: $green;
+}
+
+.tracker__mainValue,
+.tracker__value,
+.tracker__label {
+    color: $white
+}
+
+.tracker__mainValue {
+    font-size: $h2;
+    font-weight: $bold;
+    line-height: lineHeight($h2);
+}
+
+.tracker__value {
+    font-size: $p;
+    font-weight: $medium;
+    line-height: lineHeight($h2);
+}
+
+.tracker__label {
+    font-size: $p;
+    font-weight: $medium;
+    line-height: lineHeight($h2);
+}

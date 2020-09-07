@@ -1,0 +1,29 @@
+// Device sizes
+$mobile: '768px';
+$tablet: '768px';
+$desktop: '1300px';
+
+// Font Weight
+$bold: 800;
+$medium: 400;
+$light: 200;
+
+// Font Sizes
+$h1: 36px;
+$h2: 28px;
+$h3: 20px;
+$p: 16px;
+
+// line Height
+@function lineHeight( $fontSize: 16px) {
+    @return $fontSize + $fontSize / 2 
+}
+
+// Colors
+$blue: #5454e2;
+$grey-light: #e0d8d8;
+$cyan: #29f5f5;
+$green: #0e9c0e;
+$red: #f75353;
+$yellow: #f5f54d;
+$white: #ffffff
